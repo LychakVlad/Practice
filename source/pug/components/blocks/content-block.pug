@@ -5,23 +5,23 @@ mixin content-block(data, windowData, secondData, right)
       .container
         .content-block__wrapper
           .content-block__column
-          if(data)
-            +text-block(data)
+            if(data)
+              +text-block(data)
           .content-block__column
-          if(windowData)
-            +img-window(windowData)
-          else
-            +text-block(secondData)
+            if(windowData)
+              +img-window(windowData)
+            else
+              +text-block(secondData)
   else
     .content-block--left
       .container
         .content-block__wrapper
           .content-block__column
-          if(windowData)
-            +img-window(windowData)
+            if(windowData)
+              +img-window(windowData)
           .content-block__column
-          if(data)
-            +text-block(data)
+            if(data)
+              +text-block(data)
 
 
 

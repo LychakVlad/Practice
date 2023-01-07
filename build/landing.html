@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol></svg></div>
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol><symbol id="wave" viewBox="0 0 67 11"><g fill="none">
+<path d="M66.503 3.89634C44.603 17.3663 22.733 -9.59366 0.862969 3.89634C0.852969 6.57634 0.852969 3.67634 0.862969 6.33634C22.743 -7.14366 44.623 19.8363 66.503 6.33634C66.503 3.65634 66.493 6.58634 66.503 3.89634Z" fill="white"/>
+</g></symbol><symbol id="window-sgv-add-border" viewBox="0 0 553 683"><g fill="none">
+<path d="M551.557 276.432C551.557 124.309 428.299 1 276.239 1C124.258 1 1 124.309 1 276.432L1.55237 682.053H552.109L551.557 276.432Z" stroke="white" stroke-opacity="0.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="window-sgv-border" viewBox="0 0 498 250"><g fill="none">
+<path d="M497.424 249.276H433.507C433.507 147.597 350.809 64.8649 249.173 64.8649C147.536 64.8649 64.9173 147.597 64.9173 249.276H1C1 112.389 112.342 1.00004 249.173 1.00004C386.082 0.921099 497.424 112.31 497.424 249.276Z" stroke="white" stroke-opacity="0.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol></svg>
+    </div>
     <div class="wrapper">
       <header class="header">
         <div class="container"><a class="header__logo" href="index.html" aria-label="Переход на главную">Логотип</a>
@@ -36,23 +43,29 @@
         <div class="content-block">
           <div class="container">
             <div class="content-block__wrapper">
-              <div class="content-block__column"></div>
-              <div class="text-block"><img src="img/content/wave.svg" srcset="img/content/wave@2x.svg 2x" width="66" height="10" alt="wave">
-                <p class="text-block__text--style-bold">Дом находится в 50 метрах от знаменитых Чистых прудов,в одном из самых романтичных и престижных районов Москвы. Дом расположен в тихом Потаповском переулке, в глубине квартала, где всегда царит камерная приватная атмосфера.</p>
-                <p class="text-block__text--style-default">Это настоящий клубный дом всего на 31 квартиру, включая четыре пентхауса c террасами и каминами.</p>
-                <p class="text-block__text--style-default">Мы деликатно реконструируем дом 1915 года — воссоздаём подлинный облик здания, наполняя новым, исключительным для домов такого класса, содержанием: просторное роскошное лобби c потолками 4,7 метра, общественная гостиная, фитнес-центр, пространства для детей и др.</p>
+              <div class="content-block__column">
+                <div class="text-block">
+                  <svg class="text-block__wave-img" width="66" height="10" aria-hidden="true">
+                    <use xlink:href="#wave"></use>
+                  </svg>
+                  <p class="text-block__text--style-bold">Дом находится в 50 метрах от знаменитых Чистых прудов,в одном из самых романтичных и престижных районов Москвы. Дом расположен в тихом Потаповском переулке, в глубине квартала, где всегда царит камерная приватная атмосфера.</p>
+                  <p class="text-block__text--style-default">Это настоящий клубный дом всего на 31 квартиру, включая четыре пентхауса c террасами и каминами.</p>
+                  <p class="text-block__text--style-default">Мы деликатно реконструируем дом 1915 года — воссоздаём подлинный облик здания, наполняя новым, исключительным для домов такого класса, содержанием: просторное роскошное лобби c потолками 4,7 метра, общественная гостиная, фитнес-центр, пространства для детей и др.</p>
+                </div>
               </div>
-              <div class="content-block__column"></div>
-              <div class="img-window">
-                <div class="img-window__png"><img src="img/content/window-img-1.png" srcset="img/content/window-img-1@2x.png 2x" width="432" height="578" alt="window">
-                </div>
-                <div class="img-window__svg"><img src="img/content/window-sgv-border.svg" srcset="img/content/window-sgv-border@2x.svg 2x" width="498" height="250" alt="border">
-                </div>
-                <div class="img-window__text">
-                  <p class="img-window__number">31</p>
-                  <p class="img-window__desc">уникальная квартира</p>
-                  <p class="img-window__text-wave"><img src="img/content/wave.svg" srcset="img/content/wave@2x.svg 2x" width="66" height="10" alt="wave">
-                  </p>
+              <div class="content-block__column">
+                <div class="img-window">
+                  <div class="img-window__content"><img class="img-window__img" src="img/content/window-img-1.png" alt="Логотип проекта"></div>
+                  <svg class="img-window__decor" width="553" height="683" aria-hidden="true">
+                    <use xlink:href="#window-sgv-border"></use>
+                  </svg>
+                  <div class="img-window__text">
+                    <p class="img-window__number">31</p>
+                    <p class="img-window__desc">уникальная квартира</p>
+                    <svg class="img-window__text-wave" width="66" height="10" aria-hidden="true">
+                      <use xlink:href="#wave"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -61,26 +74,30 @@
         <div class="content-block--left">
           <div class="container">
             <div class="content-block__wrapper">
-              <div class="content-block__column"></div>
-              <div class="img-window">
-                <div class="img-window__png"><img src="img/content/window-img-2.png" srcset="img/content/window-img-2@2x.png 2x" width="432" height="578" alt="window">
-                </div>
-                <div class="img-window__svg"><img src="img/content/window-sgv-border.svg" srcset="img/content/window-sgv-border@2x.svg 2x" width="498" height="250" alt="border">
-                </div>
-                <div class="img-window__svg-add"><img src="img/content/window-sgv-add-border.svg" srcset="img/content/window-sgv-add-border@2x.svg 2x" width="553" height="683" alt="add-border">
-                </div>
-                <div class="img-window__text">
-                  <p class="img-window__number">50</p>
-                  <p class="img-window__desc">метров до пруда</p>
-                  <p class="img-window__text-wave"><img src="img/content/wave.svg" srcset="img/content/wave@2x.svg 2x" width="66" height="10" alt="wave">
-                  </p>
+              <div class="content-block__column">
+                <div class="img-window">
+                  <div class="img-window__content"><img class="img-window__img" src="img/content/window-img-1.png" alt="Логотип проекта"></div>
+                  <svg class="img-window__decor" width="553" height="683" aria-hidden="true">
+                    <use xlink:href="#window-sgv-border"></use>
+                  </svg>
+                  <svg class="img-window__decor-add" width="553" height="683" aria-hidden="true">
+                    <use xlink:href="#window-sgv-add-border"></use>
+                  </svg>
+                  <div class="img-window__text">
+                    <p class="img-window__number">50</p>
+                    <p class="img-window__desc">метров до пруда</p>
+                    <svg class="img-window__text-wave" width="66" height="10" aria-hidden="true">
+                      <use xlink:href="#wave"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-              <div class="content-block__column"></div>
-              <div class="text-block">
-                <div class="title title--h2">ТИШИНА И ПРИВАТНОСТЬ</div>
-                <p class="text-block__text--style-default">Дом расположен в самом уютном месте района,в окружении тихих исторических переулков, всего в 50 метрах от знаменитого пруда.</p>
-                <p class="text-block__text--style-default">Мы создали по-настоящему приватное пространство для наших жителей, островок тишины и комфорта посреди шумного мегаполиса:</p>
+              <div class="content-block__column">
+                <div class="text-block">
+                  <h2 class="title title--h2">ТИШИНА И ПРИВАТНОСТЬ</h2>
+                  <p class="text-block__text--style-default">Дом расположен в самом уютном месте района,в окружении тихих исторических переулков, всего в 50 метрах от знаменитого пруда.</p>
+                  <p class="text-block__text--style-default">Мы создали по-настоящему приватное пространство для наших жителей, островок тишины и комфорта посреди шумного мегаполиса:</p>
+                </div>
               </div>
             </div>
           </div>

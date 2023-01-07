@@ -1,19 +1,16 @@
 mixin img-window(data)
   .img-window
     if(data.pngName)
-    .img-window__png
-      +img("content", data.pngName , "png", 432, 578, "window")
+    .img-window__content
+      img(src="img/content/window-img-1.png" alt="Логотип проекта").img-window__img
     if(data.svgName)
-      .img-window__svg
-        +img("content", data.svgName , "svg", 498, 250, "border")
+      +icon("window-sgv-border", 553, 683).img-window__decor
     if(data.addBorder)
-      .img-window__svg-add
-        +img("content", data.addBorder , "svg", 553, 683, "add-border")
+      +icon("window-sgv-add-border", 553, 683).img-window__decor-add
     .img-window__text
       if(data.number)
         p.img-window__number=data.number
       if(data.description)
         p.img-window__desc=data.description
-        p.img-window__text-wave
-          +img("content", "wave" , "svg", 66, 10, "wave")
+        +icon("wave", 66, 10).img-window__text-wave
 
