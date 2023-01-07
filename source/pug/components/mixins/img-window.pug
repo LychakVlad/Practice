@@ -1,0 +1,19 @@
+mixin img-window(data)
+  .img-window
+    if(data.pngName)
+    .img-window__png
+      +img("content", data.pngName , "png", 432, 578, "window")
+    if(data.svgName)
+      .img-window__svg
+        +img("content", data.svgName , "svg", 498, 250, "border")
+    if(data.addBorder)
+      .img-window__svg-add
+        +img("content", data.addBorder , "svg", 553, 683, "add-border")
+    .img-window__text
+      if(data.number)
+        p.img-window__number=data.number
+      if(data.description)
+        p.img-window__desc=data.description
+        p.img-window__text-wave
+          +img("content", "wave" , "svg", 66, 10, "wave")
+

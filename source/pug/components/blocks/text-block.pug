@@ -1,0 +1,14 @@
+mixin text-block(data)
+  .text-block&attributes(attributes)
+    if(data.wave)
+      +img("content", "wave" , "svg", 66, 10, "wave").text-block__wave-img
+    if(data.title)
+      .title.title--h2= data.title
+    if(data.boldText)
+      p.text-block__text--style-bold= data.boldText
+    if(data.defaultText)
+      p.text-block__text--style-default= data.defaultText
+    if(data.secondDefaultText)
+      p.text-block__text--style-default= data.secondDefaultText
+
+

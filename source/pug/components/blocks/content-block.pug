@@ -1,0 +1,27 @@
+
+mixin content-block(data, windowData, secondData, right)
+  if(right)
+    .content-block
+      .container
+        .content-block__wrapper
+          .content-block__column
+          if(data)
+            +text-block(data)
+          .content-block__column
+          if(windowData)
+            +img-window(windowData)
+          else
+            +text-block(secondData)
+  else
+    .content-block--left
+      .container
+        .content-block__wrapper
+          .content-block__column
+          if(windowData)
+            +img-window(windowData)
+          .content-block__column
+          if(data)
+            +text-block(data)
+
+
+

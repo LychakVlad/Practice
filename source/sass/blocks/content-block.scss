@@ -1,0 +1,59 @@
+.content-block{
+
+&--left{
+
+}
+}
+
+.content-block__wrapper{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 200px 0px 200px;
+}
+
+.img-window{
+  position: relative;
+}
+
+.img-window__svg{
+  position: absolute;
+  left: -5%;
+  bottom: 64%;
+  width: 110%;
+}
+
+.img-window__svg-add{
+  position: absolute;
+  left: -10%;
+  bottom: -3%;
+  width: 120%;
+}
+
+.img-window__text{
+  position: absolute;
+  left: 15%;
+  bottom: 28%;
+  text-align: center;
+}
+
+.img-window__number{
+  font-family: 'BazaART';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100px;
+  color: $color-default-white;
+  margin: 0px;
+}
+
+  .img-window__desc {
+  font-family: 'BazaART';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $color-default-white;
+  margin: 0px;
+}

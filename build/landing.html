@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>ProjectName</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol></svg></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"><a class="header__logo" href="index.html" aria-label="Переход на главную">Логотип</a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="#icon-burger"></use>
+              </svg>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 2</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 3</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="content-block">
+          <div class="container">
+            <div class="content-block__wrapper">
+              <div class="content-block__column"></div>
+              <div class="text-block"><img src="img/content/wave.svg" srcset="img/content/wave@2x.svg 2x" width="66" height="10" alt="wave">
+                <p class="text-block__text--style-bold">Дом находится в 50 метрах от знаменитых Чистых прудов,в одном из самых романтичных и престижных районов Москвы. Дом расположен в тихом Потаповском переулке, в глубине квартала, где всегда царит камерная приватная атмосфера.</p>
+                <p class="text-block__text--style-default">Это настоящий клубный дом всего на 31 квартиру, включая четыре пентхауса c террасами и каминами.</p>
+                <p class="text-block__text--style-default">Мы деликатно реконструируем дом 1915 года — воссоздаём подлинный облик здания, наполняя новым, исключительным для домов такого класса, содержанием: просторное роскошное лобби c потолками 4,7 метра, общественная гостиная, фитнес-центр, пространства для детей и др.</p>
+              </div>
+              <div class="content-block__column"></div>
+              <div class="img-window">
+                <div class="img-window__png"><img src="img/content/window-img-1.png" srcset="img/content/window-img-1@2x.png 2x" width="432" height="578" alt="window">
+                </div>
+                <div class="img-window__svg"><img src="img/content/window-sgv-border.svg" srcset="img/content/window-sgv-border@2x.svg 2x" width="498" height="250" alt="border">
+                </div>
+                <div class="img-window__text">
+                  <p class="img-window__number">31</p>
+                  <p class="img-window__desc">уникальная квартира</p>
+                  <p class="img-window__text-wave"><img src="img/content/wave.svg" srcset="img/content/wave@2x.svg 2x" width="66" height="10" alt="wave">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-block--left">
+          <div class="container">
+            <div class="content-block__wrapper">
+              <div class="content-block__column"></div>
+              <div class="img-window">
+                <div class="img-window__png"><img src="img/content/window-img-2.png" srcset="img/content/window-img-2@2x.png 2x" width="432" height="578" alt="window">
+                </div>
+                <div class="img-window__svg"><img src="img/content/window-sgv-border.svg" srcset="img/content/window-sgv-border@2x.svg 2x" width="498" height="250" alt="border">
+                </div>
+                <div class="img-window__svg-add"><img src="img/content/window-sgv-add-border.svg" srcset="img/content/window-sgv-add-border@2x.svg 2x" width="553" height="683" alt="add-border">
+                </div>
+                <div class="img-window__text">
+                  <p class="img-window__number">50</p>
+                  <p class="img-window__desc">метров до пруда</p>
+                  <p class="img-window__text-wave"><img src="img/content/wave.svg" srcset="img/content/wave@2x.svg 2x" width="66" height="10" alt="wave">
+                  </p>
+                </div>
+              </div>
+              <div class="content-block__column"></div>
+              <div class="text-block">
+                <div class="title title--h2">ТИШИНА И ПРИВАТНОСТЬ</div>
+                <p class="text-block__text--style-default">Дом расположен в самом уютном месте района,в окружении тихих исторических переулков, всего в 50 метрах от знаменитого пруда.</p>
+                <p class="text-block__text--style-default">Мы создали по-настоящему приватное пространство для наших жителей, островок тишины и комфорта посреди шумного мегаполиса:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container"></div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

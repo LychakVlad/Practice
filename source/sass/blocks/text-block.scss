@@ -1,0 +1,36 @@
+.text-block{
+  max-width: 430px;
+}
+
+.title{
+
+&--h2{
+  font-family: 'BazaART';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 50px;
+text-transform: uppercase;
+color: $color-default-white;
+}
+}
+
+.text-block__text{
+  font-family: 'Circe';
+  font-style: normal;
+
+&--style-bold{
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+color: $color-default-white;
+}
+
+&--style-default{
+font-weight: 100;
+font-size: 18px;
+line-height: 26px;
+color: #E2E8F4;
+}
+
+}

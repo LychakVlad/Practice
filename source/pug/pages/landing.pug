@@ -1,0 +1,52 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = " " //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+
+
+  -
+    const firstBlock = {
+      wave: 'true',
+      boldText: "Дом находится в 50 метрах от знаменитых Чистых прудов,в одном из самых романтичных и престижных районов Москвы. Дом расположен в тихом Потаповском переулке, в глубине квартала, где всегда царит камерная приватная атмосфера.",
+      defaultText: 'Это настоящий клубный дом всего на 31 квартиру, включая четыре пентхауса c террасами и каминами.',
+      secondDefaultText: 'Мы деликатно реконструируем дом 1915 года — воссоздаём подлинный облик здания, наполняя новым, исключительным для домов такого класса, содержанием: просторное роскошное лобби c потолками 4,7 метра, общественная гостиная, фитнес-центр, пространства для детей и др.',
+    };
+
+  -
+    const firstWindow = {
+      number: 31,
+      description: 'уникальная квартира',
+      pngName: 'window-img-1',
+      svgName: 'window-sgv-border',
+    }
+
+  -
+    const secondBlock = {
+      title: 'ТИШИНА И ПРИВАТНОСТЬ',
+      defaultText: 'Дом расположен в самом уютном месте района,в окружении тихих исторических переулков, всего в 50 метрах от знаменитого пруда.',
+      secondDefaultText: 'Мы создали по-настоящему приватное пространство для наших жителей, островок тишины и комфорта посреди шумного мегаполиса:',
+    };
+
+  -
+    const secondWindow = {
+      number: 50,
+      description: 'метров до пруда',
+      pngName: 'window-img-2',
+      svgName: 'window-sgv-border',
+      addBorder: 'window-sgv-add-border',
+    }
+
+
+block main
+  main
+    +content-block(firstBlock, firstWindow, '' , true)
+    +content-block(secondBlock, secondWindow, '' , false)
+
+block modals
