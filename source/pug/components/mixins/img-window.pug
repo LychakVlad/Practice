@@ -2,7 +2,7 @@ mixin img-window(data)
   .img-window
     if(data.pngName)
     .img-window__content
-      img(src="img/content/window-img-1.png" alt="Логотип проекта").img-window__img
+      +picture('content', 'window-img-1', 'png', 1726, 1470, 'window-img').img-window__img
     if(data.svgName)
       +icon("window-sgv-border", 553, 683).img-window__decor
     if(data.addBorder)

@@ -18,6 +18,7 @@ color: $color-default-white;
 .text-block__text{
   font-family: 'Circe';
   font-style: normal;
+  margin-top: 20px;
 
 &--style-bold{
 font-weight: 400;
@@ -30,7 +31,24 @@ color: $color-default-white;
 font-weight: 100;
 font-size: 18px;
 line-height: 26px;
-color: #E2E8F4;
+color: $color-default-white;
+}
 }
 
+.list {
+  margin-top: 20px;
+  padding-left: 18px;
+}
+.list__item{
+  color: $color-default-white;
+}
+.more-button {
+  margin-top: 20px;
+  display: flex;
+}
+.more-button__text{
+  color: $color-default-white;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
