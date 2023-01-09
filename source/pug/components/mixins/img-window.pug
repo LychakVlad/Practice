@@ -2,15 +2,15 @@ mixin img-window(data)
   .img-window
     if(data.pngName)
     .img-window__content
-      +picture('content', 'window-img-1', 'png', 1726, 1470, 'window-img').img-window__img
-    if(data.svgName)
-      +icon("window-sgv-border", 553, 683).img-window__decor
-    if(data.addBorder)
-      +icon("window-sgv-add-border", 553, 683).img-window__decor-add
+      +picture('content', data.pngName, 'png', data.width, data.height, 'window-img').img-window__img
     .img-window__text
       if(data.number)
         p.img-window__number=data.number
       if(data.description)
         p.img-window__desc=data.description
         +icon("wave", 66, 10).img-window__text-wave
+    if(data.svgName)
+      +icon("window-sgv-border", 553, 683).img-window__decor
+    if(data.addBorder)
+      +icon("window-sgv-add-border", 553, 683).img-window__decor-add
 
