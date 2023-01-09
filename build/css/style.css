@@ -1345,10 +1345,6 @@ button,
   justify-content: space-between;
 }
 
-.content-block__column {
-  width: 100%;
-}
-
 .img-window {
   width: 433px;
   height: 578px;
@@ -1377,12 +1373,16 @@ button,
 
 .img-window__decor {
   position: absolute;
-  width: 100%;
+  width: 120%;
+  top: -42%;
+  left: -10%;
 }
 
 .img-window__decor-add {
   position: absolute;
-  width: 100%;
+  width: 130%;
+  top: -10%;
+  left: -14.5%;
 }
 
 .img-window__text {
