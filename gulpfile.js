@@ -9,7 +9,7 @@ import pug from './gulp/compilePug.mjs';
 
 const server = browserSync.create();
 const streamStyles = () => styles().pipe(server.stream());
-const clean = () => del('build');
+const clean = () => del('docs');
 const refresh = (done) => {
   server.reload();
   done();
@@ -17,7 +17,7 @@ const refresh = (done) => {
 
 const syncServer = () => {
   server.init({
-    server: 'build/',
+    server: 'docs/',
     index: 'sitemap.html',
     notify: false,
     open: true,
@@ -38,8 +38,8 @@ const syncServer = () => {
   gulp.watch('source/*.php', gulp.series(copy, refresh));
 };
 
-const build = gulp.series(clean, copy, sprite, gulp.parallel(styles, js, pug, optimizePng, optimizeJpg, optimizeSvg));
+const docs = gulp.series(clean, copy, sprite, gulp.parallel(styles, js, pug, optimizePng, optimizeJpg, optimizeSvg));
 const dev = gulp.series(clean, copy, sprite, gulp.parallel(styles, js, pug, optimizePng, optimizeJpg, optimizeSvg), syncServer);
 const start = gulp.series(clean, copy, sprite, gulp.parallel(styles, js, pug), syncServer);
 
-export {createWebp as webp, build, start, dev};
+export {createWebp as webp, docs, start, dev};

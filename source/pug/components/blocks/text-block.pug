@@ -14,7 +14,7 @@ mixin text-block(data)
         each item in data.list
           li.list__item.list__item--style-default= item
     if(data.button)
-      .more-button
+      a(href="#").more-button
         +icon("more_but", 73, 50).more-button__arrow
         p.more-button__text.more-button__text--style-default= 'Подробнее'
 

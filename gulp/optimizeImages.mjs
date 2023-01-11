@@ -9,51 +9,51 @@ import svgo from 'imagemin-svgo';
 
 const sprite = () =>
   gulp
-      .src('source/img/sprite/*.svg')
-      .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite.svg'))
-      .pipe(gulp.dest('build/img'));
+    .src('source/img/sprite/*.svg')
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('docs/img'));
 
 const optimizeSvg = () =>
   gulp
-      .src('build/img/**/*.svg')
-      .pipe(
-          imagemin([
-            svgo({
-              plugins: [
-                {
-                  name: 'removeViewBox',
-                  active: false,
-                },
-                {
-                  name: 'removeRasterImages',
-                  active: true,
-                },
-                {
-                  name: 'removeUselessStrokeAndFill',
-                  active: false,
-                }],
-            })]))
-      .pipe(gulp.dest('build/img'));
+    .src('docs/img/**/*.svg')
+    .pipe(
+      imagemin([
+        svgo({
+          plugins: [
+            {
+              name: 'removeViewBox',
+              active: false,
+            },
+            {
+              name: 'removeRasterImages',
+              active: true,
+            },
+            {
+              name: 'removeUselessStrokeAndFill',
+              active: false,
+            }],
+        })]))
+    .pipe(gulp.dest('docs/img'));
 
 const optimizeJpg = () =>
   gulp
-      .src('build/img/**/*.{jpg,jpeg}')
-      .pipe(imagemin([mozJpeg({quality: 90, progressive: true})]))
-      .pipe(gulp.dest('build/img'));
+    .src('docs/img/**/*.{jpg,jpeg}')
+    .pipe(imagemin([mozJpeg({ quality: 90, progressive: true })]))
+    .pipe(gulp.dest('docs/img'));
 
 const optimizePng = () =>
   gulp
-      .src('build/img/**/*.png')
-      .pipe(
-          imagemin([
-            pngQuant({
-              speed: 1,
-              strip: true,
-              dithering: 1,
-              quality: [0.8, 0.9],
-            })]))
-      .pipe(gulp.dest('build/img'));
+    .src('docs/img/**/*.png')
+    .pipe(
+      imagemin([
+        pngQuant({
+          speed: 1,
+          strip: true,
+          dithering: 1,
+          quality: [0.8, 0.9],
+        })]))
+    .pipe(gulp.dest('docs/img'));
 
 /*
   Optional tasks
@@ -69,9 +69,10 @@ const optimizePng = () =>
 const createWebp = () => {
   const root = '';
   return gulp
-      .src(`source/img/${root}**/*.{png,jpg}`)
-      .pipe(webp({quality: 90}))
-      .pipe(gulp.dest(`source/img/${root}`));
+    .src(`source/img/${root}**/*.{png,jpg}`)
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest(`source/img/${root}`));
 };
 
-export {sprite, createWebp, optimizeSvg, optimizePng, optimizeJpg};
+export { sprite, createWebp, optimizeSvg, optimizePng, optimizeJpg };
+

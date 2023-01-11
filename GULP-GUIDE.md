@@ -51,10 +51,10 @@
           grid: true,
         })]))
         .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
-        .pipe(gulp.dest('build/css'))
+        .pipe(gulp.dest('docs/css'))
         .pipe(csso())
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('build/css', {sourcemaps: '.'}));
+        .pipe(gulp.dest('docs/css', {sourcemaps: '.'}));
 ```
 Далее экспортим функцию.
 
@@ -67,7 +67,7 @@
 ```js
   const server = browserSync.create();
   const streamStyles = () => styles().pipe(server.stream());
-  const clean = () => del('build');
+  const clean = () => del('docs');
   const refresh = (done) => {
     server.reload();
     done();
@@ -75,7 +75,7 @@
 
   const syncServer = () => {
     server.init({
-      server: 'build/',
+      server: 'docs/',
       index: 'sitemap.html',
       notify: false,
       open: true,
@@ -100,8 +100,8 @@
 Создание и экспорт комманд.
 
 ```js
-  const build = gulp.series(clean, svgo, copy, styles, sprite, js, pug);
-  const start = gulp.series(build, syncServer);
+  const docs = gulp.series(clean, svgo, copy, styles, sprite, js, pug);
+  const start = gulp.series(docs, syncServer);
 
-  export { optimizeImages as imagemin, createWebp as webp, build, start };
+  export { optimizeImages as imagemin, createWebp as webp, docs, start };
 ```
