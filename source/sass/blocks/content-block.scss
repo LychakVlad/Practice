@@ -2,76 +2,26 @@
 .content-block__wrapper{
   display: flex;
   max-width: 100%;
-  padding: 100px 0px 100px;
+  padding: 60px 0px 60px;
   justify-content: space-between;
 }
 
 
-.img-window{
-  width: 433px;
-  height: 578px;
-  position: relative;
-}
+@media (max-width: 990px) {
+  .content-block__wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
 
-.img-window__content{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-  overflow: hidden;
-  border-radius: 626px;
-}
+  .content-block__column{
+    max-width: 870px;
+  }
 
-.img-window__img{
-  img{
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -2;
+  .content-block__wrapper--left{
+    flex-direction: column-reverse;
   }
 }
 
-.img-window__decor{
-  position: absolute;
-  width: 120%;
-  top: -42%;
-  left: -10%;
-}
-
-.img-window__decor-add{
-  position: absolute;
-  width: 130%;
-  top: -10%;
-  left: -14.5%;
-}
-
-.img-window__text{
-  text-align: center;
-  max-width: 300px;
-  margin: 0 auto;
-  padding-top: 186px;
-  z-index: 1;
-}
-
-.img-window__number{
-  font-family: 'BazaART';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 100px;
-  color: $color-default-white;
-  margin: 0px;
-}
-
-  .img-window__desc {
-  font-family: 'BazaART';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: $color-default-white;
-  margin: 0px;
+@media (max-width: 770px) {
+  
 }

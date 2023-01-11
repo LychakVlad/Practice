@@ -2,19 +2,6 @@
   max-width: 430px;
 }
 
-.title{
-
-&--h2{
-  font-family: 'BazaART';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 50px;
-text-transform: uppercase;
-color: $color-default-white;
-}
-}
-
 .text-block__text{
   font-family: 'Circe';
   font-style: normal;
@@ -35,20 +22,13 @@ color: $color-default-white;
 }
 }
 
-.list {
-  margin-top: 20px;
-  padding-left: 18px;
-}
-.list__item{
-  color: $color-default-white;
-}
-.more-button {
-  margin-top: 20px;
-  display: flex;
-}
-.more-button__text{
-  color: $color-default-white;
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
+
+@media (max-width: 990px) {
+  .text-block{
+    max-width: 870px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
 }

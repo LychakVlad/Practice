@@ -15,7 +15,7 @@ mixin content-block(data, windowData, secondData, right)
   else
     .content-block
       .container
-        .content-block__wrapper
+        .content-block__wrapper.content-block__wrapper--left
           .content-block__column
             if(windowData)
               +img-window(windowData)
