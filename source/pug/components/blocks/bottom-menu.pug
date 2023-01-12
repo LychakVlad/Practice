@@ -1,0 +1,13 @@
+
+mixin bottom-menu(windowData, menu)
+  .bottom-menu&attributes(attributes)
+    .container
+      p.bottom-menu__title Узнать больше о преимуществах проекта
+        .bottom-menu__wrapper
+          .bottom-menu__column
+            if(menu)
+
+          .bottom-menu__column
+            if(windowData)
+              +img-window(windowData)
+
