@@ -1,0 +1,53 @@
+
+.bottom-menu__title{
+  font-family: 'BazaART';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 160px;
+  color: #204186;
+}
+
+.bottom-menu__sub-title{
+  font-family: 'BazaART';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #204186;
+}
+
+.bottom-menu__wrapper{
+  display: flex;
+  max-width: 100%;
+  padding: 60px 0px 60px;
+  justify-content: space-between;
+}
+
+.bottom-menu__list:first-child{
+  padding-top: 25px;
+}
+
+.bottom-menu__list-item{
+  margin-bottom: 48px;
+  &--style-upper{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 990px) {
+  .bottom-menu__wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-menu__list{
+    display: none;
+  }
+}

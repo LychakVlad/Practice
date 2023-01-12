@@ -1,12 +1,15 @@
-
 mixin bottom-menu(windowData, menu)
   .bottom-menu&attributes(attributes)
     .container
-      p.bottom-menu__title Узнать больше о преимуществах проекта
+      p.bottom-menu__title Узнать больше
+      p.bottom-menu__sub-title о преимуществах проекта
         .bottom-menu__wrapper
           .bottom-menu__column
-            if(menu)
-
+            if(menu.list)
+              ul.bottom-menu__list
+                each item in menu.list
+                  a(href=menu.href)
+                    li.bottom-menu__list-item.bottom-menu__list-item--style-upper= item
           .bottom-menu__column
             if(windowData)
               +img-window(windowData)

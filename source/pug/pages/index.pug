@@ -170,6 +170,27 @@ block variables
       button: true,
     };
 
+  -
+    const bottomBlock = {
+      list: [
+      'тишина и приватность',
+      'насыщенное содержание',
+      'подлинная красота',
+      'абсолютный комфорт',
+      'прекрасное окружение',
+      'все для детей',
+      'роскошные квартиры',
+      ],
+      href: '#',
+    };
+
+  -
+    const bottomWindow = {
+      pngName: 'window-img-7',
+      svgName: 'window-svg-add',
+      addBorder: 'window-svg-border',
+    };
+
 
 
 block main
@@ -183,6 +204,6 @@ block main
     +content-block(seventhBlockLeft,'', seventhBlockRight, true)
     +content-block(eighthBlock, eighthWindow, '' , true)
     +content-block(ninthBlockLeft,'', ninthBlockRight, true)
-    +bottom-menu(secondWindow)
+    +bottom-menu(bottomWindow, bottomBlock)
 
 block modals
