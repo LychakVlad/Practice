@@ -25,20 +25,28 @@
   justify-content: space-between;
 }
 
+.bottom-menu__list{
+  list-style-type: none;
+}
+
 .bottom-menu__list:first-child{
   padding-top: 25px;
 }
 
 .bottom-menu__list-item{
-  margin-bottom: 48px;
+  transition: all .3s ease;
+  margin-bottom: 44px;
   &--style-upper{
     font-family: 'Circe';
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.2);
+  }
+  :hover{
+    color: $color-default-white;
   }
 }
 
